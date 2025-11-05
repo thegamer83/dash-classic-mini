@@ -1,0 +1,4 @@
+=== GX16-10 (final) ===
+1:+5V  2:GND  3:LED DATA(GPIO13) 4:MOSI(23) 5:SCK(18)
+6:CS(5) 7:DC(26) 8:RST(25) 9:Touch_CS(optional) 10:BL(27)
+Note: MISO(19) not used with ST7796S.

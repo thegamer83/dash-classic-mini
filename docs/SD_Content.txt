@@ -1,0 +1,4 @@
+=== Contenu carte SD (racine) ===
+logo_mini.bmp   → logo démarrage (BMP 24 bits, 480x320, fond noir)
+map_france.bmp  → fond page GPS (BMP 24 bits, 480x320, gris)
+Règles : BMP 24 bits, pas de compression, noms courts (<=8+3).

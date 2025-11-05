@@ -1,0 +1,25 @@
+=== ESP32 DevKit V1 – Correspondance des broches ===
+LEDs WS2812B DATA  : GPIO13 (sortie)
+TFT MOSI           : GPIO23 (SPI out)
+TFT SCK            : GPIO18 (SPI clk)
+TFT CS             : GPIO5
+TFT DC             : GPIO26
+TFT RST            : GPIO25
+TFT BL             : GPIO27
+Fuel (niveau)      : GPIO32 (ADC)
+Temp eau           : GPIO33 (ADC)
+Vbat               : GPIO36 (ADC via pont)
+RPM opto           : GPIO34 (entrée pulses)
+Cligno gauche      : GPIO14 (entrée)
+Cligno droit       : GPIO4 (entrée)
+Feux croisement    : GPIO22 (entrée)
+Plein phare/huile  : GPIO39 (entrée)
+Encodeur A         : GPIO2
+Encodeur B         : GPIO15
+Encodeur bouton    : GPIO0
+GPS RX             : GPIO16 (UART2 RX)
+GPS TX             : GPIO17 (UART2 TX)
+SD MISO            : GPIO19 (si SD)
+SD MOSI            : GPIO23 (partagé)
+SD SCK             : GPIO18 (partagé)
+SD CS              : GPIO21
