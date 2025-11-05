@@ -25,8 +25,44 @@ Basé sur un **ESP32** et un **écran TFT ST7796S 4" (480×320)**, avec un style
 
 ## 🧩 Organisation du projet
 
-
----
+Dash_Mini_Retro_V1/
+│
+├── README.md
+├── platformio.ini
+│
+├── src/
+│ ├── main.ino
+│ ├── page_classic.ino
+│ ├── page_racing.ino
+│ ├── page_gps.ino
+│ ├── page_settings.ino
+│ └── wifi_upload.ino
+│
+├── include/
+│ └── config.h
+│
+├── lib/
+│ └── TFT_eSPI/
+│ └── User_Setup.h
+│
+├── data/
+│ ├── mini_logo.bmp
+│ ├── page_bg.bmp
+│ └── gps_map_tiles/
+│
+├── 3D_models/
+│ ├── screen_mount.stl
+│ ├── esp32_box.stl
+│ └── led_frame.stl
+│
+├── docs/
+│ ├── wiring_diagram.png
+│ ├── pinout_table.pdf
+│ └── Dash_Mini_Retro_V1_Guide.pdf
+│
+└── assets/
+├── preview_dashboard.jpg
+└── mini_logo_preview.png
 
 ## 🖥️ Écran TFT
 
