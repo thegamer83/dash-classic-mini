@@ -1,6 +1,6 @@
 # 🚗 Dash Mini Retro V1
 
-**Tableau de bord numérique pour Austin Mini (1993 – moteur HIF38)**  
+**Tableau de bord numérique pour Austin Mini (1993 – moteur 1300cc carbu HIF38)**  
 Basé sur un **ESP32** et un **écran TFT ST7796S 4" (480×320)**, avec un style inspiré des compteurs de voitures de course classiques 🏁
 
 ---
