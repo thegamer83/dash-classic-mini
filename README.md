@@ -58,14 +58,14 @@ Basé sur un **ESP32** et un **écran TFT ST7796S 4" (480×320)**, avec un style
 |:------:|:----|:----------|
 | 1 | 5V | Alimentation écran |
 | 2 | GND | Masse commune |
-| 3 | Data LED | Signal WS2812B |
-| 4 | RPM | Entrée optocoupleur |
-| 5 | Température eau | Sonde analogique |
-| 6 | Essence | Sonde analogique |
-| 7 | GPS RX | Données GPS (vers ESP32) |
-| 8 | GPS TX | Données GPS (depuis ESP32) |
-| 9 | Phares | Entrée logique |
-| 10 | Clignotants | Entrée logique |
+| 3 | Data LED | GPIO4 |
+| 4 | Mosi |  GPIO23 |
+| 5 | SCK | GPIO18 |
+| 6 | CS | GPIO15 |
+| 7 | DC | GPIO25 |
+| 8 | RST | GPIO27 |
+| 9 | Touch_Cs | disponible |
+| 10 | BL/Led | GPIO25 |
 
 ---
 ---
