@@ -22,8 +22,26 @@ Basé sur un **ESP32** et un **écran TFT ST7796S 4" (480×320)**, avec un style
 - ⚡ Alimentation 12 V → 5 V via convertisseur buck
 
 ---
+## 🧠 Pages disponibles
 
+| Page | Nom | Description |
+|------|-----|--------------|
+| 0 | **Classic** | Style compteur Mini 3 cadrans (RPM / Vitesse / Essence & Temp) |
+| 1 | **Racing** | Affichage sport avec shift-light et tension |
+| 2 | **Calibration** | Réglages capteurs & LED |
+| 3 | **OTA** | Mise à jour Wi-Fi sans câble |
 
+---v
+
+## 💡 Conseils
+
+- Le **5 V VIN** alimente l’écran et les LED via un **buck converter 12→5 V**.  
+- Les signaux capteurs analogiques doivent passer par **ponts diviseurs de tension**.  
+- Le **rétroéclairage** (GPIO 25) peut être atténué via PWM selon les phares.  
+- Les **LED WS2812B** sont toutes sur **le même fil DATA (GPIO 4)**.  
+- Les 6 modules **JZK optocoupleurs** sont branchés sur les GPIO listés ci-dessus.
+
+---
 ## 🖥️ Écran TFT
 
 - **Modèle :** ST7796S SPI  
@@ -48,6 +66,33 @@ Basé sur un **ESP32** et un **écran TFT ST7796S 4" (480×320)**, avec un style
 | 8 | GPS TX | Données GPS (depuis ESP32) |
 | 9 | Phares | Entrée logique |
 | 10 | Clignotants | Entrée logique |
+
+---
+---
+
+## 🔧 Connexions principales
+
+| Élément | Signal | GPIO ESP32 | Description |
+|----------|---------|-------------|--------------|
+| TFT MOSI | MOSI | **23** | Données SPI vers écran |
+| TFT SCLK | SCK | **18** | Horloge SPI |
+| TFT MISO | MISO | **19** | Lecture SPI |
+| TFT CS | CS | **15** | Chip Select TFT |
+| TFT DC | DC | **26** | Données / Commandes |
+| TFT RST | RST | **27** | Reset de l’écran |
+| TFT BL | BL | **25** | Rétroéclairage (PWM phares) |
+| LED WS2812B | DATA | **4** | Chaîne de 24 LED (4 gauche, 16 centre, 4 droite) |
+| JZK RPM | Signal | **32** | Entrée fréquence moteur |
+| JZK huile | Signal | **33** | Voyant pression huile |
+| JZK phares | Signal | **34** | Allumage feux |
+| JZK pleins phares | Signal | **35** | Allumage plein phare |
+| JZK clignotant gauche | Signal | **36** | Clignotant gauche |
+| JZK clignotant droit | Signal | **39** | Clignotant droit |
+| Sonde température | Analog | **A0 (GPIO36)** | Température eau |
+| Sonde essence | Analog | **A3 (GPIO39)** | Niveau carburant |
+| Batterie | Analog | **A6 (GPIO34)** | Mesure tension via pont diviseur |
+| Encodeur | CLK/DT/SW | **16 / 17 / 5** | Navigation menu |
+| Carte SD | MOSI/SCK/MISO/CS | **23/18/19/13** | Fichiers GPS et logos |
 
 ---
 
